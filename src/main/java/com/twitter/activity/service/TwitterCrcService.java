@@ -45,7 +45,6 @@ public class TwitterCrcService implements ITwitterCrcService {
         event.setJsonEntity(json);
         event.setDate(new Timestamp(System.currentTimeMillis()));
         eventRepository.save(event);
-        System.out.println(json);
     }
 
 }
